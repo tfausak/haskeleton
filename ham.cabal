@@ -7,3 +7,9 @@ executable ham
   build-depends:    base == 4.5.*
   default-language: Haskell2010
   main-is:          Main.hs
+
+Test-Suite test-ham
+  build-depends:    Cabal == 1.18.* , base == 4.5.*
+  default-language: Haskell2010
+  test-module:      Tests
+  type:             detailed-0.9
