@@ -1,6 +1,6 @@
 module Main (main) where
 
-import Data.Time.Clock (diffUTCTime, getCurrentTime)
+import           Data.Time.Clock (diffUTCTime, getCurrentTime)
 
 main :: IO ()
 main = do
