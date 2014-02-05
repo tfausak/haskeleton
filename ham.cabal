@@ -4,6 +4,6 @@ name:          ham
 version:       0.0.0
 
 executable ham
-  build-depends:    base == 4.*
+  build-depends:    base == 4.5.*
   default-language: Haskell2010
   main-is:          Main.hs
