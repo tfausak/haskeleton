@@ -11,9 +11,10 @@ The name comes from *H*askell progr*am*.
 ``` sh
 cabal configure --enable-benchmarks --enable-tests &&
   cabal build &&
+  cabal haddock --hyperlink-source &&
   cabal test &&
   cabal bench &&
   cabal install &&
   ham
-# => ham
+# => Ham!
 ```
