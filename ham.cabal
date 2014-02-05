@@ -1,6 +1,20 @@
+author:        Taylor Fausak
+bug-reports:   https://github.com/tfausak/ham/issues
 build-type:    Simple
 cabal-version: >= 1.18
+category:      Other
+copyright:     2014 Taylor Fausak <taylor@fausak.me>
+description:   This is meant to be a simple but complete Cabal package. It
+               provides a library, an executable, a test suite, and some
+               benchmarks. None of them really do anything.
+               .
+               The name comes from /H/askell progr/am/.
+homepage:      https://github.com/tfausak/ham
+license-file:  LICENSE.txt
+license:       MIT
+maintainer:    taylor@fausak.me
 name:          ham
+synopsis:      The simplest Haskell program as a Cabal package.
 version:       0.0.0
 
 library
