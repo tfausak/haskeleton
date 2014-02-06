@@ -17,11 +17,12 @@ sudo apt-get -y install haskell-platform
 cabal update
 cabal install cabal-install
 cabal install hsenv
-echo 'PATH="$HOME/.cabal/bin"' > ~/.bash_profile
-source ~/.bash_profile
-hsenv
+~/.cabal/bin/hsenv
 source .hsenv/bin/activate
-cabal install --enable-benchmarks --enable-tests --flags=documentation .
+```
+
+``` sh
+cabal install --enable-benchmarks --enable-tests -fdocumentation --only-dependencies
 cabal configure --enable-benchmarks --enable-tests
 cabal build
 cabal haddock --hyperlink-source
@@ -29,9 +30,6 @@ cabal test
 cabal bench
 cabal install
 hop
-# ...
-deactivate_hsenv
-
 ```
 
 ## Development
