@@ -22,20 +22,13 @@ source .hsenv/bin/activate
 ```
 
 ``` sh
-cabal install --enable-benchmarks --enable-tests -fdevelopment -fdocumentation --only-dependencies
+cabal install --enable-benchmarks --enable-tests -fdocumentation --only-dependencies
 cabal configure --enable-benchmarks --enable-tests
 cabal build
 cabal haddock --hyperlink-source
 cabal test
 cabal bench
 cabal run hop
-```
-
-``` sh
-find benchmarks source tests -name '*.hs' \
-  -print \
-  -execdir scan --inplace-modify --multiple-blanks=0 -- '{}' \; \
-  -execdir stylish-haskell --inplace -- '{}' \;
 ```
 
 ## Links
