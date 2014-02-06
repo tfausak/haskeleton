@@ -6,6 +6,7 @@ import           Test.Hspec
 main :: IO ()
 main = hspec spec
 
+{-# ANN spec "HLint: ignore Redundant do" #-}
 spec :: Spec
 spec = do
   describe "hop" $ do
