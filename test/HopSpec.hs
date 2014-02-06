@@ -1,3 +1,5 @@
+{-# ANN module "HLint: ignore Redundant do" #-}
+
 module HopSpec (main, spec) where
 
 import           Hop
