@@ -18,7 +18,7 @@ cabal configure --enable-benchmarks --enable-tests &&
   cabal bench &&
   cabal install &&
   hop
-# => Hop!
+# => Hop! Hop! Hop!
 ```
 
 ## Development

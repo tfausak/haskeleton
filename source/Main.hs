@@ -3,4 +3,4 @@ module Main (main) where
 import           Hop (hop)
 
 main :: IO ()
-main = putStrLn hop
+main = putStrLn (hop 3)
