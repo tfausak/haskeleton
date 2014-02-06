@@ -21,6 +21,9 @@ source-repository head
   location:         git://github.com/tfausak/hop.git
   type:             git
 
+flag development
+  default:          False
+
 flag documentation
   default:          False
 
@@ -29,6 +32,11 @@ library
   default-language: Haskell2010
   exposed-modules:  Hop
   hs-source-dirs:   source
+
+  if flag(development)
+    build-depends:  hlint == 1.8.*
+                  , scan == 0.1.*
+                  , stylish-haskell == 0.5.*
 
   if flag(documentation)
     build-depends:  hscolour == 1.20.*

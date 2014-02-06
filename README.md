@@ -22,7 +22,7 @@ source .hsenv/bin/activate
 ```
 
 ``` sh
-cabal install --enable-benchmarks --enable-tests -fdocumentation --only-dependencies
+cabal install --enable-benchmarks --enable-tests -fdevelopment -fdocumentation --only-dependencies
 cabal configure --enable-benchmarks --enable-tests
 cabal build
 cabal haddock --hyperlink-source
@@ -32,10 +32,7 @@ cabal install
 hop
 ```
 
-## Development
-
 ``` sh
-cabal install hlint pointfree pointful scan stylish-haskell
 find source -name '*.hs' \
   -print \
   -execdir scan --inplace-modify --multiple-blanks=0 -- '{}' \; \
