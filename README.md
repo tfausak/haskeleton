@@ -11,14 +11,26 @@ The name comes from *H*askell n*op*.
 ## Setup
 
 ``` sh
-cabal configure --enable-benchmarks --enable-tests &&
-  cabal build &&
-  cabal haddock --hyperlink-source &&
-  cabal test &&
-  cabal bench &&
-  cabal install &&
-  hop
-# => Hop! Hop! Hop!
+sudo apt-get -y install haskell-platform
+cabal update
+cabal install cabal-install
+cabal install hsenv
+echo 'PATH="$HOME/.cabal/bin"' > ~/.bash_profile
+source ~/.bash_profile
+hsenv
+source .hsenv/bin/activate
+cabal install --enable-benchmarks --enable-tests .
+cabal install hscolour # TODO: This sucks!
+cabal configure --enable-benchmarks --enable-tests
+cabal build
+cabal haddock --hyperlink-source
+cabal test
+cabal bench
+cabal install
+hop
+# ...
+deactivate_hsenv
+
 ```
 
 ## Development

@@ -2,4 +2,5 @@
 *.imports
 *.o
 .hpc/
+.hsenv/
 dist/
