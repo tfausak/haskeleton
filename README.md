@@ -21,7 +21,7 @@ echo 'PATH="$HOME/.cabal/bin"' > ~/.bash_profile
 source ~/.bash_profile
 hsenv
 source .hsenv/bin/activate
-cabal install --enable-benchmarks --enable-tests .
+cabal install --enable-benchmarks --enable-tests --flags=documentation .
 cabal configure --enable-benchmarks --enable-tests
 cabal build
 cabal haddock --hyperlink-source
