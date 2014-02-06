@@ -1,10 +1,9 @@
 module Main (main) where
 
-import           Data.Time.Clock (diffUTCTime, getCurrentTime)
+import           Criterion.Main (bench, defaultMain, whnf)
+import           Hop            (hop)
 
 main :: IO ()
-main = do
-  start <- getCurrentTime
-  stop <- getCurrentTime
-  let elapsed = diffUTCTime stop start
-  print elapsed
+main = defaultMain
+  [ bench "hop" (whnf hop 3)
+  ]
