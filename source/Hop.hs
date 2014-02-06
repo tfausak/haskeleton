@@ -1,8 +1,6 @@
 -- | This is the top-level module documentation.
 module Hop (hop) where
 
-import           Data.List (intercalate)
-
 {- | This is the documentation for the 'hop' function.
 
 >>> hop 3 -- This is some example code.

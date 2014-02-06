@@ -28,8 +28,7 @@ cabal build
 cabal haddock --hyperlink-source
 cabal test
 cabal bench
-cabal install
-hop
+cabal run hop
 ```
 
 ``` sh
@@ -60,6 +59,6 @@ find benchmarks source tests -name '*.hs' \
   this project aims to solve the question it poses
 - <https://github.com/sol/hspec-example>
   example hspec and cabal
-  
+
 [1]: https://travis-ci.org/tfausak/hop.png?branch=master
 [2]: https://travis-ci.org/tfausak/hop
