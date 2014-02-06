@@ -24,9 +24,10 @@ cabal configure --enable-benchmarks --enable-tests &&
 ## Development
 
 ``` sh
-find . -name '*.hs' | xargs -n 1 scan --inplace-modify --multiple-blanks=0
-find . -name '*.hs' | xargs stylish-haskell --config=.stylish-haskell.yaml --inplace
-find . -name '*.hs' | xargs hlint --color --hint=HLint.hs
+find . -name '*.hs' -not -path './dist/*' \
+  -execdir scan --inplace-modify --multiple-blanks=0 -- '{}' \; \
+  -execdir stylish-haskell --inplace -- '{}' \; \
+  -execdir hlint --color -- '{}' \;
 ```
 
 ## Links
