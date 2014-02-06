@@ -36,7 +36,8 @@ deactivate_hsenv
 ## Development
 
 ``` sh
-find . -name '*.hs' -not -path './dist/*' \
+find . -name '*.hs' -not -path './dist/*' -not -path './.hsenv/*' \
+  -print \
   -execdir scan --inplace-modify --multiple-blanks=0 -- '{}' \; \
   -execdir stylish-haskell --inplace -- '{}' \; \
   -execdir hlint --color -- '{}' \;
@@ -61,3 +62,5 @@ find . -name '*.hs' -not -path './dist/*' \
 - <http://stackoverflow.com/q/9662806/1274282>
   not much by itself, but lots of other good links
   this project aims to solve the question it poses
+- <https://github.com/sol/hspec-example>
+  example hspec and cabal
