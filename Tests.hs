@@ -11,5 +11,5 @@ tests = return [Test succeeds]
       , name = "succeeds"
       , tags = []
       , options = []
-      , setOption = \_ _ -> Right succeeds
+      , setOption = \ _ _ -> Right succeeds
       }
