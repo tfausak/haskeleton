@@ -1,74 +1,118 @@
-author:        Taylor Fausak
-bug-reports:   https://github.com/tfausak/hop/issues
-build-type:    Simple
-cabal-version: >= 1.10
-category:      Other
-copyright:     2014 Taylor Fausak <taylor@fausak.me>
-description:   This is meant to be a simple but complete Cabal package. It
-               provides a library, an executable, a test suite, and some
-               benchmarks. None of them really do anything.
-               .
-               The name comes from /H/askell n/op/.
-homepage:      https://github.com/tfausak/hop
-license-file:  LICENSE.txt
-license:       MIT
-maintainer:    taylor@fausak.me
-name:          hop
-synopsis:      The simplest Haskell program as a Cabal package.
-version:       0.0.0
+author:
+    Taylor Fausak
+bug-reports:
+    https://github.com/tfausak/hop/issues
+build-type:
+    Simple
+cabal-version:
+    >= 1.10
+category:
+    Other
+copyright:
+    2014 Taylor Fausak <taylor@fausak.me>
+description:
+    This is meant to be a simple but complete Cabal package. It
+    provides a library, an executable, a test suite, and some
+    benchmarks. None of them really do anything.
+    .
+    The name comes from /H/askell n/op/.
+homepage:
+    https://github.com/tfausak/hop
+license-file:
+    LICENSE.txt
+license:
+    MIT
+maintainer:
+    taylor@fausak.me
+name:
+    hop
+synopsis:
+    The simplest Haskell program as a Cabal package.
+version:
+    0.0.0
 
 source-repository head
-  location:         git://github.com/tfausak/hop.git
-  type:             git
+    location:
+        git://github.com/tfausak/hop.git
+    type:
+        git
 
 flag development
-  default:          False
+    default:
+        False
 
 flag documentation
-  default:          False
+    default:
+        False
 
 library
-  build-depends:    base == 4.*
-  default-language: Haskell2010
-  exposed-modules:  Hop
-  hs-source-dirs:   source
+    build-depends:
+        base == 4.*
+    default-language:
+        Haskell2010
+    exposed-modules:
+        Hop
+    hs-source-dirs:
+        source
 
-  if flag(development)
-    build-depends:  scan == 0.1.*
-                  , stylish-haskell == 0.5.*
+    if flag(development)
+        build-depends:
+            scan == 0.1.*
+          , stylish-haskell == 0.5.*
 
-  if flag(documentation)
-    build-depends:  hscolour == 1.20.*
+    if flag(documentation)
+        build-depends:
+            hscolour == 1.20.*
 
 executable hop
-  build-depends:    base == 4.*
-  default-language: Haskell2010
-  hs-source-dirs:   source
-  main-is:          Main.hs
+    build-depends:
+        base == 4.*
+    default-language:
+        Haskell2010
+    hs-source-dirs:
+        source
+    main-is:
+        Main.hs
 
 test-suite hlint
-  build-depends:    base == 4.*
-                  , hlint == 1.8.*
-  default-language: Haskell2010
-  hs-source-dirs:   tests
-  main-is:          HLint.hs
-  type:             exitcode-stdio-1.0
+    build-depends:
+        base == 4.*
+      , hlint == 1.8.*
+    default-language:
+        Haskell2010
+    hs-source-dirs:
+        tests
+    main-is:
+        HLint.hs
+    type:
+        exitcode-stdio-1.0
 
 test-suite hspec
-  build-depends:    base == 4.*
-                  , hop
-                  , hspec == 1.8.*
-  default-language: Haskell2010
-  ghc-options:      -Wall -Werror
-  hs-source-dirs:   tests
-  main-is:          Spec.hs
-  type:             exitcode-stdio-1.0
+    build-depends:
+        base == 4.*
+      , hop
+      , hspec == 1.8.*
+    default-language:
+        Haskell2010
+    ghc-options:
+        -Wall -Werror
+    hs-source-dirs:
+        tests
+    main-is:
+        Spec.hs
+    type:
+        exitcode-stdio-1.0
 
 benchmark benchmarks
-  build-depends:    base == 4.*
-                  , criterion == 0.8.*
-                  , hop
-  default-language: Haskell2010
-  hs-source-dirs:   benchmarks
-  main-is:          Main.hs
-  type:             exitcode-stdio-1.0
+    build-depends:
+        base == 4.*
+      , criterion == 0.8.*
+      , hop
+    default-language:
+        Haskell2010
+    hs-source-dirs:
+        benchmarks
+    main-is:
+        Main.hs
+    type:
+        exitcode-stdio-1.0
