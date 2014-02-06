@@ -1,9 +1,7 @@
 module Main (main) where
 
-import           Criterion.Main (bench, defaultMain, whnf)
-import           Hop            (hop)
+import           Criterion.Main (defaultMain)
+import qualified HopBench
 
 main :: IO ()
-main = defaultMain
-  [ bench "hop" (whnf hop 3)
-  ]
+main = defaultMain HopBench.benchmarks
