@@ -1,7 +1,7 @@
 author:        Taylor Fausak
 bug-reports:   https://github.com/tfausak/hop/issues
 build-type:    Simple
-cabal-version: >= 1.18
+cabal-version: >= 1.10
 category:      Other
 copyright:     2014 Taylor Fausak <taylor@fausak.me>
 description:   This is meant to be a simple but complete Cabal package. It
@@ -18,22 +18,22 @@ synopsis:      The simplest Haskell program as a Cabal package.
 version:       0.0.0
 
 library
-  build-depends:    base == 4.5.*
+  build-depends:    base
   default-language: Haskell2010
   exposed-modules:  Hop
   hs-source-dirs:   source
 
 executable hop
-  build-depends:    base == 4.5.*
+  build-depends:    base
   default-language: Haskell2010
   hs-source-dirs:   source
   main-is:          Main.hs
 
 Test-Suite test-hop
-  build-depends:    base == 4.5.*
-                  , Cabal == 1.18.*
+  build-depends:    base
+                  , Cabal
                   , hop
-                  , HTF == 0.11.*
+                  , HTF
   default-language: Haskell2010
   ghc-options:      -fhpc -F -pgmF htfpp
   hs-source-dirs:   test
@@ -41,8 +41,8 @@ Test-Suite test-hop
   type:             exitcode-stdio-1.0
 
 Benchmark bench-hop
-  build-depends:    base == 4.5.*
-                  , criterion == 0.8.*
+  build-depends:    base
+                  , criterion
                   , hop
   default-language: Haskell2010
   hs-source-dirs:   bench
