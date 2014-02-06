@@ -29,7 +29,7 @@ executable hop
   hs-source-dirs:   source
   main-is:          Main.hs
 
-Test-Suite test-hop
+test-suite test
   build-depends:    base
                   , Cabal
                   , hop
@@ -40,7 +40,7 @@ Test-Suite test-hop
   main-is:          Main.hs
   type:             exitcode-stdio-1.0
 
-Benchmark bench-hop
+benchmark bench
   build-depends:    base
                   , criterion
                   , hop
