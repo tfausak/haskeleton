@@ -18,21 +18,23 @@ synopsis:      The simplest Haskell program as a Cabal package.
 version:       0.0.0
 
 library
-  build-depends:    base
+  build-depends:    base == 4.6.*
+                  -- TODO: This is only for documentation.
+                  , hscolour == 1.20.*
   default-language: Haskell2010
   exposed-modules:  Hop
   hs-source-dirs:   source
 
 executable hop
-  build-depends:    base
+  build-depends:    base == 4.6.*
   default-language: Haskell2010
   hs-source-dirs:   source
   main-is:          Main.hs
 
 test-suite test
-  build-depends:    base
+  build-depends:    base == 4.6.*
                   , hop
-                  , hspec
+                  , hspec == 1.8.*
   default-language: Haskell2010
   ghc-options:      -Wall -Werror
   hs-source-dirs:   test
@@ -40,8 +42,8 @@ test-suite test
   type:             exitcode-stdio-1.0
 
 benchmark bench
-  build-depends:    base
-                  , criterion
+  build-depends:    base == 4.6.*
+                  , criterion == 0.8.*
                   , hop
   default-language: Haskell2010
   hs-source-dirs:   bench

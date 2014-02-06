@@ -20,7 +20,6 @@ source ~/.bash_profile
 hsenv
 source .hsenv/bin/activate
 cabal install --enable-benchmarks --enable-tests .
-cabal install hscolour # TODO: This sucks!
 cabal configure --enable-benchmarks --enable-tests
 cabal build
 cabal haddock --hyperlink-source
@@ -36,6 +35,7 @@ deactivate_hsenv
 ## Development
 
 ``` sh
+cabal install hlint pointfree pointful scan stylish-haskell
 find . -name '*.hs' -not -path './dist/*' -not -path './.hsenv/*' \
   -print \
   -execdir scan --inplace-modify --multiple-blanks=0 -- '{}' \; \
