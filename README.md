@@ -1,5 +1,7 @@
 # Hop
 
+[![Build Status][1]][2]
+
 The simplest Haskell program as a Cabal package.
 
 This is meant to be a simple but complete Cabal package. It provides a library,
@@ -64,3 +66,6 @@ find . -name '*.hs' -not -path './dist/*' -not -path './.hsenv/*' \
   this project aims to solve the question it poses
 - <https://github.com/sol/hspec-example>
   example hspec and cabal
+  
+[1]: https://travis-ci.org/tfausak/hop.png?branch=master
+[2]: https://travis-ci.org/tfausak/hop
