@@ -4,3 +4,4 @@
 .hpc/
 .hsenv/
 dist/
+hsenv.log

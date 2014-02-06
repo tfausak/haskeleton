@@ -38,7 +38,7 @@ deactivate_hsenv
 
 ``` sh
 cabal install hlint pointfree pointful scan stylish-haskell
-find . -name '*.hs' -not -path './dist/*' -not -path './.hsenv/*' \
+find source -name '*.hs' \
   -print \
   -execdir scan --inplace-modify --multiple-blanks=0 -- '{}' \; \
   -execdir stylish-haskell --inplace -- '{}' \; \
