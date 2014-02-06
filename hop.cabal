@@ -17,6 +17,10 @@ name:          hop
 synopsis:      The simplest Haskell program as a Cabal package.
 version:       0.0.0
 
+source-repository head
+  location:         git://github.com/tfausak/hop.git
+  type:             git
+
 flag documentation
   default:          False
 
