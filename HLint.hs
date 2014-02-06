@@ -1,5 +1,5 @@
 module HLint () where
 
-import           HLint.Default
-import           HLint.Dollar
-import           HLint.Generalise
+import "hint" HLint.Default
+import "hint" HLint.Dollar
+import "hint" HLint.Generalise

@@ -36,8 +36,7 @@ hop
 find benchmarks source tests -name '*.hs' \
   -print \
   -execdir scan --inplace-modify --multiple-blanks=0 -- '{}' \; \
-  -execdir stylish-haskell --inplace -- '{}' \; \
-  -execdir hlint --color -- '{}' \;
+  -execdir stylish-haskell --inplace -- '{}' \;
 ```
 
 ## Links
