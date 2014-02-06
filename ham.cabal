@@ -1,5 +1,5 @@
 author:        Taylor Fausak
-bug-reports:   https://github.com/tfausak/ham/issues
+bug-reports:   https://github.com/tfausak/hop/issues
 build-type:    Simple
 cabal-version: >= 1.18
 category:      Other
@@ -8,28 +8,28 @@ description:   This is meant to be a simple but complete Cabal package. It
                provides a library, an executable, a test suite, and some
                benchmarks. None of them really do anything.
                .
-               The name comes from /H/askell progr/am/.
-homepage:      https://github.com/tfausak/ham
+               The name comes from /H/askell n/op/.
+homepage:      https://github.com/tfausak/hop
 license-file:  LICENSE.txt
 license:       MIT
 maintainer:    taylor@fausak.me
-name:          ham
+name:          hop
 synopsis:      The simplest Haskell program as a Cabal package.
 version:       0.0.0
 
 library
   build-depends:    base == 4.5.*
   default-language: Haskell2010
-  exposed-modules:  Ham
+  exposed-modules:  Hop
   hs-source-dirs:   source
 
-executable ham
+executable hop
   build-depends:    base == 4.5.*
   default-language: Haskell2010
   hs-source-dirs:   source
   main-is:          Main.hs
 
-Test-Suite test-ham
+Test-Suite test-hop
   build-depends:    base == 4.5.*
                   , Cabal == 1.18.*
   default-language: Haskell2010
@@ -37,7 +37,7 @@ Test-Suite test-ham
   main-is:          Main.hs
   type:             exitcode-stdio-1.0
 
-Benchmark bench-ham
+Benchmark bench-hop
   build-depends:    base == 4.5.*
                   , time == 1.4.*
   default-language: Haskell2010

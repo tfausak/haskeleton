@@ -1,6 +1,6 @@
 module Main (main) where
 
-import           Ham (ham)
+import           Hop (hop)
 
 main :: IO ()
-main = putStrLn ham
+main = putStrLn hop
