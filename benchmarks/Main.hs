@@ -1,7 +1,9 @@
 module Main (main) where
 
-import           Criterion.Main (defaultMain)
+import           Criterion.Main (bgroup, defaultMain)
 import qualified HopBench
 
 main :: IO ()
-main = defaultMain HopBench.benchmarks
+main = defaultMain
+  [ bgroup "Hop" HopBench.benchmarks
+  ]
