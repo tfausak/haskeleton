@@ -1,7 +1,5 @@
 *.hi
-*.imports
 *.o
 .cabal-sandbox/
-.hpc/
 cabal.sandbox.config
 dist/
