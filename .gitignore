@@ -1,7 +1,7 @@
 *.hi
 *.imports
 *.o
+.cabal-sandbox/
 .hpc/
-.hsenv/
+cabal.sandbox.config
 dist/
-hsenv.log

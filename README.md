@@ -16,12 +16,10 @@ The name comes from *H*askell n*op*.
 sudo apt-get -y install haskell-platform
 cabal update
 cabal install cabal-install
-cabal install hsenv
-~/.cabal/bin/hsenv
-source .hsenv/bin/activate
 ```
 
 ``` sh
+cabal sandbox init
 cabal install --enable-benchmarks --enable-tests -fdocumentation --only-dependencies
 cabal configure --enable-benchmarks --enable-tests
 cabal build
