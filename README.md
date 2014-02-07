@@ -50,6 +50,8 @@ cabal run hop
   this project aims to solve the question it poses
 - <https://github.com/sol/hspec-example>
   example hspec and cabal
+- <http://coldwa.st/e/blog/2013-08-20-Cabal-sandbox.html>
+  convinced me to switch from hsenv to cabal sandbox
 
 [1]: https://travis-ci.org/tfausak/hop.png?branch=master
 [2]: https://travis-ci.org/tfausak/hop
