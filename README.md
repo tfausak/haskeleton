@@ -23,7 +23,8 @@ cabal build
 cabal haddock --hyperlink-source
 cabal test
 cabal bench
-cabal run hop
+cabal run hop 3
+# => Hop! Hop! Hop!
 ```
 
 ## Links
