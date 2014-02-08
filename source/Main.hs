@@ -1,6 +1,9 @@
 module Main (main) where
 
-import           Hop (hop)
+import           Hop                (hop)
+import           System.Environment (getArgs)
 
 main :: IO ()
-main = putStrLn (hop 3)
+main = do
+    args <- getArgs
+    mapM_ (putStrLn . hop . read) args
