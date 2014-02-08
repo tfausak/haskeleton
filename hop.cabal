@@ -5,7 +5,7 @@ bug-reports:
 build-type:
     Simple
 cabal-version:
-    >= 1.10
+    >= 1.18
 category:
     Other
 copyright:
