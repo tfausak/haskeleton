@@ -2,6 +2,7 @@ module HopSpec (main, spec) where
 
 import           Hop             (hop)
 import           Test.Hspec      (Spec, describe, hspec, it, shouldBe)
+import           Test.HUnit      ()
 import           Test.QuickCheck (property)
 
 main :: IO ()
