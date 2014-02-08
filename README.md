@@ -13,7 +13,7 @@ The name comes from *H*askell n*op*.
 ## Setup
 
 ``` sh
-sudo apt-get -y install haskell-platform
+sudo apt-get -y install haskell-platform haskell-platform-doc
 cabal update
 cabal install cabal-install
 ```
