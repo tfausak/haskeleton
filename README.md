@@ -16,9 +16,6 @@ The name comes from *H*askell n*op*.
 sudo apt-get -y install haskell-platform haskell-platform-doc
 cabal update
 cabal install cabal-install
-```
-
-``` sh
 cabal sandbox init
 cabal install --enable-benchmarks --enable-tests -fdocumentation --only-dependencies
 cabal configure --enable-benchmarks --enable-tests

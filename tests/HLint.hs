@@ -5,14 +5,14 @@ import           System.Exit            (exitFailure, exitSuccess)
 
 arguments :: [String]
 arguments =
-  [ "--color"
-  , "--hint=HLint.hs"
-  , "benchmarks"
-  , "source"
-  , "tests"
-  ]
+    [ "--color"
+    , "--hint=HLint.hs"
+    , "benchmarks"
+    , "source"
+    , "tests"
+    ]
 
 main :: IO ()
 main = do
-  hints <- hlint arguments
-  if null hints then exitSuccess else exitFailure
+    hints <- hlint arguments
+    if null hints then exitSuccess else exitFailure

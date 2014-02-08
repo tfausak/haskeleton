@@ -5,5 +5,5 @@ import qualified HopBench
 
 main :: IO ()
 main = defaultMain
-  [ bgroup "Hop" HopBench.benchmarks
-  ]
+    [ bgroup "Hop" HopBench.benchmarks
+    ]
