@@ -83,6 +83,7 @@ test-suite hspec
         base == 4.*
       , hop
       , hspec == 1.8.*
+      , QuickCheck == 2.6.*
     default-language:
         Haskell2010
     ghc-options:
