@@ -1,3 +1,5 @@
+{-# LANGUAGE PackageImports #-}
+
 module HLint () where
 
 import "hint" HLint.Default
