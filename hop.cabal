@@ -98,12 +98,17 @@ test-suite hspec
     default-language:
         Haskell2010
     ghc-options:
+        -fhpc
         -Wall
         -Werror
     hs-source-dirs:
+        source
         tests
     main-is:
         Spec.hs
+    other-modules:
+        Hop
+        HopSpec
     type:
         exitcode-stdio-1.0
 
