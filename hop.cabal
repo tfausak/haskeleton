@@ -48,6 +48,9 @@ library
         Haskell2010
     exposed-modules:
         Hop
+    ghc-prof-options:
+        -auto-all
+        -prof
     hs-source-dirs:
         source
 
@@ -60,6 +63,9 @@ executable hop
         base == 4.*
     default-language:
         Haskell2010
+    ghc-prof-options:
+        -auto-all
+        -prof
     hs-source-dirs:
         source
     main-is:
@@ -88,7 +94,8 @@ test-suite hspec
     default-language:
         Haskell2010
     ghc-options:
-        -Wall -Werror
+        -Wall
+        -Werror
     hs-source-dirs:
         tests
     main-is:
