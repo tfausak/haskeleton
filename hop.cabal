@@ -16,6 +16,10 @@ description:
     benchmarks. None of them really do anything.
     .
     The name comes from /H/askell n/op/.
+extra-source-files:
+    CHANGELOG.md
+    CONTRIBUTING.md
+    README.md
 homepage:
     https://github.com/tfausak/hop
 license-file:
