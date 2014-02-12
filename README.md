@@ -17,7 +17,7 @@ sudo apt-get -y install haskell-platform haskell-platform-doc
 cabal update
 cabal install cabal-install
 cabal sandbox init
-cabal install --enable-benchmarks --enable-tests --flags=documentation --only-dependencies
+cabal install --enable-benchmarks --enable-tests --flags=documentation --only-dependencies --reorder-goals
 cabal configure --enable-benchmarks --enable-tests
 cabal build
 cabal haddock --hyperlink-source
