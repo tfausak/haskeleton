@@ -6,4 +6,4 @@
 4. Push your fork.
 5. Submit a pull request.
 
-[fork]: https://github.com/tfausak/hop/fork
+[fork]: https://github.com/tfausak/haskeleton/fork

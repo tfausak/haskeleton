@@ -4,7 +4,7 @@ import           Test.DocTest (doctest)
 
 arguments :: [String]
 arguments =
-    [ "source/Hop.hs"
+    [ "source/Haskeleton.hs"
     ]
 
 main :: IO ()

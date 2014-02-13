@@ -1,3 +1,3 @@
 # [Master][]
 
-[master]: https://github.com/tfausak/hop/compare/dd853da...master
+[master]: https://github.com/tfausak/haskeleton/compare/dd853da...master

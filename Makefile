@@ -12,8 +12,8 @@ clean:
 	rm --force --recursive .hpc
 
 coverage: test
-	hpc report --include=Hop dist/hpc/tix/hspec/hspec.tix
-	hpc markup --destdir=tmp --include=Hop dist/hpc/tix/hspec/hspec.tix
+	hpc report --include=Haskeleton dist/hpc/tix/hspec/hspec.tix
+	hpc markup --destdir=tmp --include=Haskeleton dist/hpc/tix/hspec/hspec.tix
 
 haddock:
 	cabal install --flags=documentation --only-dependencies
@@ -30,13 +30,13 @@ repl:
 	cabal install --only-dependencies
 	cabal configure
 	cabal build
-	cabal repl lib:hop
+	cabal repl lib:haskeleton
 
 run:
 	cabal install --only-dependencies
 	cabal configure
 	cabal build
-	cabal run hop
+	cabal run haskeleton
 
 test:
 	cabal install --enable-tests --only-dependencies
