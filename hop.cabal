@@ -101,18 +101,6 @@ test-suite hlint
     type:
         exitcode-stdio-1.0
 
-test-suite hpc
-    build-depends:
-        base == 4.*
-    default-language:
-        Haskell2010
-    hs-source-dirs:
-        tests
-    main-is:
-        HPC.hs
-    type:
-        exitcode-stdio-1.0
-
 test-suite hspec
     build-depends:
         base == 4.*
@@ -134,6 +122,21 @@ test-suite hspec
     other-modules:
         Hop
         HopSpec
+    type:
+        exitcode-stdio-1.0
+
+-- Must come after hspec test suite.
+test-suite hpc
+    build-depends:
+        base == 4.*
+      , process == 1.1.*
+      , regex-compat == 0.95.*
+    default-language:
+        Haskell2010
+    hs-source-dirs:
+        tests
+    main-is:
+        HPC.hs
     type:
         exitcode-stdio-1.0
 
