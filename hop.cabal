@@ -88,6 +88,18 @@ test-suite doctest
     type:
         exitcode-stdio-1.0
 
+test-suite haddock
+    build-depends:
+        base == 4.*
+    default-language:
+        Haskell2010
+    hs-source-dirs:
+        tests
+    main-is:
+        Haddock.hs
+    type:
+        exitcode-stdio-1.0
+
 test-suite hlint
     build-depends:
         base == 4.*
