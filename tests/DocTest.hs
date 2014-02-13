@@ -1,6 +1,6 @@
 module Main (main) where
 
-import Test.DocTest (doctest)
+import           Test.DocTest (doctest)
 
 arguments :: [String]
 arguments =
