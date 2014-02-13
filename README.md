@@ -14,17 +14,7 @@ The name comes from *H*askell n*op*.
 
 ``` sh
 sudo apt-get -y install haskell-platform haskell-platform-doc
-cabal update
-cabal install cabal-install
-cabal sandbox init
-cabal install --enable-benchmarks --enable-tests --flags=documentation --only-dependencies --reorder-goals
-cabal configure --enable-benchmarks --enable-tests
-cabal build
-cabal haddock --hyperlink-source
-cabal test
-cabal bench
-cabal run hop 3
-# => Hop! Hop! Hop!
+make
 ```
 
 [1]: https://travis-ci.org/tfausak/hop.png?branch=master
