@@ -53,7 +53,7 @@ library
         -auto-all
         -prof
     hs-source-dirs:
-        source
+        library
 
     if flag(documentation)
         build-depends:
@@ -127,7 +127,7 @@ test-suite hspec
         -Wall
         -Werror
     hs-source-dirs:
-        source
+        library
         tests
     main-is:
         Spec.hs

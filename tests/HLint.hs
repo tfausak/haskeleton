@@ -8,7 +8,7 @@ arguments =
     [ "--color"
     , "--hint=HLint.hs"
     , "benchmarks"
-    , "source"
+    , "library"
     , "tests"
     ]
 
