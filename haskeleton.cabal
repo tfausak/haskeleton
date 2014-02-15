@@ -162,6 +162,6 @@ benchmark benchmarks
     hs-source-dirs:
         benchmarks
     main-is:
-        Main.hs
+        Bench.hs
     type:
         exitcode-stdio-1.0
