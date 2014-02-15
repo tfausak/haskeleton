@@ -62,13 +62,14 @@ library
 executable haskeleton
     build-depends:
         base == 4.*
+      , haskeleton
     default-language:
         Haskell2010
     ghc-prof-options:
         -auto-all
         -prof
     hs-source-dirs:
-        source
+        executable
     main-is:
         Main.hs
 
