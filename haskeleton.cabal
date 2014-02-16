@@ -7,7 +7,7 @@ build-type:
 cabal-version:
     >= 1.18
 category:
-    Other
+    Development
 copyright:
     2014 Taylor Fausak <taylor@fausak.me>
 description:
