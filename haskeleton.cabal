@@ -42,6 +42,34 @@ flag documentation
     default:
         False
 
+benchmark benchmarks
+    build-depends:
+        base == 4.*
+      , criterion == 0.6.*
+      , haskeleton
+    default-language:
+        Haskell2010
+    hs-source-dirs:
+        benchmark
+    main-is:
+        Bench.hs
+    type:
+        exitcode-stdio-1.0
+
+executable haskeleton
+    build-depends:
+        base == 4.*
+      , haskeleton
+    default-language:
+        Haskell2010
+    ghc-prof-options:
+        -auto-all
+        -prof
+    hs-source-dirs:
+        executable
+    main-is:
+        Main.hs
+
 library
     build-depends:
         base == 4.*
@@ -59,20 +87,6 @@ library
         build-depends:
             hscolour == 1.20.*
 
-executable haskeleton
-    build-depends:
-        base == 4.*
-      , haskeleton
-    default-language:
-        Haskell2010
-    ghc-prof-options:
-        -auto-all
-        -prof
-    hs-source-dirs:
-        executable
-    main-is:
-        Main.hs
-
 test-suite doctest
     build-depends:
         base == 4.*
@@ -83,33 +97,6 @@ test-suite doctest
         test-suite
     main-is:
         DocTest.hs
-    type:
-        exitcode-stdio-1.0
-
-test-suite haddock
-    build-depends:
-        base == 4.*
-      , process == 1.1.*
-      , regex-compat == 0.95.*
-    default-language:
-        Haskell2010
-    hs-source-dirs:
-        test-suite
-    main-is:
-        Haddock.hs
-    type:
-        exitcode-stdio-1.0
-
-test-suite hlint
-    build-depends:
-        base == 4.*
-      , hlint == 1.8.*
-    default-language:
-        Haskell2010
-    hs-source-dirs:
-        test-suite
-    main-is:
-        HLint.hs
     type:
         exitcode-stdio-1.0
 
@@ -137,7 +124,33 @@ test-suite hspec
     type:
         exitcode-stdio-1.0
 
--- Must come after hspec test suite.
+test-suite hlint
+    build-depends:
+        base == 4.*
+      , hlint == 1.8.*
+    default-language:
+        Haskell2010
+    hs-source-dirs:
+        test-suite
+    main-is:
+        HLint.hs
+    type:
+        exitcode-stdio-1.0
+
+test-suite haddock
+    build-depends:
+        base == 4.*
+      , process == 1.1.*
+      , regex-compat == 0.95.*
+    default-language:
+        Haskell2010
+    hs-source-dirs:
+        test-suite
+    main-is:
+        Haddock.hs
+    type:
+        exitcode-stdio-1.0
+
 test-suite hpc
     build-depends:
         base == 4.*
@@ -149,19 +162,5 @@ test-suite hpc
         test-suite
     main-is:
         HPC.hs
-    type:
-        exitcode-stdio-1.0
-
-benchmark benchmarks
-    build-depends:
-        base == 4.*
-      , criterion == 0.6.*
-      , haskeleton
-    default-language:
-        Haskell2010
-    hs-source-dirs:
-        benchmark
-    main-is:
-        Bench.hs
     type:
         exitcode-stdio-1.0
