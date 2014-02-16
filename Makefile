@@ -23,7 +23,7 @@ haddock:
 
 init:
 	cabal update
-	cabal install cabal-install
+	cabal --numeric-version | grep -F 1.18.0.2 || cabal install cabal-install
 	cabal sandbox init
 
 repl:
