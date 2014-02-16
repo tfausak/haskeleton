@@ -30,7 +30,7 @@ name:
 synopsis:
     A Haskell project skeleton.
 version:
-    0.0.0
+    0.1.0
 
 source-repository head
     location:
