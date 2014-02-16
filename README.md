@@ -1,4 +1,6 @@
-# [Haskeleton][1] [![Build Status][2]][3]
+# [Haskeleton][1]
+
+[![Build Status][2]][3]
 
 A Haskell project skeleton. This is a complete Cabal package including a
 library, an executable, a test suite, and some benchmarks.
