@@ -19,4 +19,6 @@ spec = do
             haskeleton 3 `shouldBe` "Haskeleton! Haskeleton! Haskeleton!"
 
         prop "is null for integers less than one" $
-            \ n -> if n < 1 then null (haskeleton n) else not (null (haskeleton n))
+            \ n -> if n < 1
+                then null (haskeleton n)
+                else not (null (haskeleton n))
