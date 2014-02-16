@@ -10,7 +10,7 @@ arguments =
     , "benchmark"
     , "executable"
     , "library"
-    , "tests"
+    , "test-suite"
     ]
 
 main :: IO ()
