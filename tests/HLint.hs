@@ -7,7 +7,7 @@ arguments :: [String]
 arguments =
     [ "--color"
     , "--hint=HLint.hs"
-    , "benchmarks"
+    , "benchmark"
     , "executable"
     , "library"
     , "tests"
