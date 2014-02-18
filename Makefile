@@ -9,7 +9,7 @@ bench:
 clean:
 	cabal clean
 	test -d .cabal-sandbox && cabal sandbox delete || true
-	rm --force --recursive .hpc
+	rm -f -r .hpc
 
 coverage: test
 	hpc report --include=Haskeleton dist/hpc/tix/hspec/hspec.tix
