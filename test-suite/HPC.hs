@@ -9,7 +9,6 @@ import           Text.Regex     (matchRegex, mkRegex)
 arguments :: [String]
 arguments =
     [ "report"
-    , "--include=Haskeleton"
     , "dist/hpc/tix/hspec/hspec.tix"
     ]
 

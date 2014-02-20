@@ -11,7 +11,6 @@ clean:
 	rm -f -r .hpc
 
 coverage: test
-	hpc report dist/hpc/tix/hspec/hspec.tix
 	hpc markup --destdir=tmp dist/hpc/tix/hspec/hspec.tix
 
 format:
