@@ -14,7 +14,7 @@ coverage: test
 	hpc markup --destdir=tmp dist/hpc/tix/hspec/hspec.tix
 
 format:
-	git ls-files '*.hs' | xargs --max-args=1 scan --inplace-modify --multiple-blanks=0
+	git ls-files '*.hs' | xargs -n 1 scan --inplace-modify --multiple-blanks=0
 	git ls-files '*.hs' | xargs stylish-haskell --inplace
 
 haddock:
