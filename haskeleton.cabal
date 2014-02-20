@@ -48,6 +48,7 @@ library
     default-language:
         Haskell2010
     exposed-modules:
+        Foo
         Haskeleton
     ghc-prof-options:
         -auto-all
@@ -119,6 +120,8 @@ test-suite hspec
     main-is:
         Spec.hs
     other-modules:
+        Foo
+        FooSpec
         Haskeleton
         HaskeletonSpec
     type:
