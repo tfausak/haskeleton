@@ -5,7 +5,7 @@ import           Test.DocTest (doctest)
 arguments :: [String]
 arguments =
     [ "library/Haskeleton.hs"
-    -- TODO
+    -- TODO: , "library/XXX.hs"
     ]
 
 main :: IO ()

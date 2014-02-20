@@ -2,10 +2,10 @@ module Main (main) where
 
 import           Criterion.Main  (bgroup, defaultMain)
 import qualified HaskeletonBench
--- TODO
+-- TODO: import qualified XXXBench
 
 main :: IO ()
 main = defaultMain
     [ bgroup "Haskeleton" HaskeletonBench.benchmarks
-    -- TODO
+    -- TODO: , bgroup "XXX" XXXBench.benchmarks
     ]
