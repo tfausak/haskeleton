@@ -121,8 +121,8 @@ test-suite hspec
         Spec.hs
     other-modules:
         Haskeleton
-        HaskeletonSpec
         -- TODO: X.X.X
+        HaskeletonSpec
         -- TODO: X.X.XSpec
     type:
         exitcode-stdio-1.0
