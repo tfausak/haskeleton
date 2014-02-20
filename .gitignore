@@ -2,6 +2,7 @@
 *.o
 .cabal-sandbox/
 .hpc/
+.vagrant/
 cabal.sandbox.config
 dist/
 tmp/
