@@ -44,7 +44,7 @@ flag documentation
 
 library
     build-depends:
-        base == 4.*
+        base
     default-language:
         Haskell2010
     exposed-modules:
@@ -61,7 +61,7 @@ library
 
 benchmark benchmarks
     build-depends:
-        base == 4.*
+        base
       , haskeleton
       , criterion == 0.6.*
     default-language:
@@ -75,7 +75,7 @@ benchmark benchmarks
 
 executable haskeleton
     build-depends:
-        base == 4.*
+        base
       , haskeleton
     default-language:
         Haskell2010
@@ -89,7 +89,7 @@ executable haskeleton
 
 test-suite doctest
     build-depends:
-        base == 4.*
+        base
       , doctest == 0.9.*
     default-language:
         Haskell2010
@@ -102,7 +102,7 @@ test-suite doctest
 
 test-suite hspec
     build-depends:
-        base == 4.*
+        base
       , haskeleton
       , hspec == 1.8.*
       , HUnit == 1.2.*
@@ -126,7 +126,7 @@ test-suite hspec
 
 test-suite hlint
     build-depends:
-        base == 4.*
+        base
       , hlint == 1.8.*
     default-language:
         Haskell2010
@@ -139,7 +139,7 @@ test-suite hlint
 
 test-suite haddock
     build-depends:
-        base == 4.*
+        base
       , process == 1.1.*
       , regex-compat == 0.95.*
     default-language:
@@ -153,7 +153,7 @@ test-suite haddock
 
 test-suite hpc
     build-depends:
-        base == 4.*
+        base
       , process == 1.1.*
       , regex-compat == 0.95.*
     default-language:
