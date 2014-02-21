@@ -1,0 +1,30 @@
+{
+    "folders": [
+        {
+            "file_exclude_patterns": [
+                "*.hi",
+                "*.o",
+                "*.sublime-project",
+                "cabal.sandbox.config"
+            ],
+            "folder_exclude_patterns": [
+                ".cabal-sandbox",
+                ".hpc",
+                ".vagrant",
+                "dist",
+                "tmp"
+            ],
+            "follow_symlinks": true,
+            "path": "."
+        }
+    ],
+    "settings": {
+        "ensure_newline_at_eof_on_save": true,
+        "rulers": [
+            79
+        ],
+        "tab_size": 4,
+        "translate_tabs_to_spaces": true,
+        "trim_trailing_white_space_on_save": true
+    }
+}
