@@ -2,12 +2,12 @@
 
 ARGV.each do |arg|
   %x( mkdir -p #{File.join('benchmark', *arg.split('.')[0..-2])} )
-  path = File.join('benchmark', *arg.split('.')) + '.hs'
+  path = File.join('benchmark', *arg.split('.')) + 'Bench.hs'
   File.open(path, 'w').write(<<-HASKELL)
 module #{arg}Bench (benchmarks) where
 
 import           Criterion
-import           #{arg}
+import           #{arg} ()
 
 benchmarks :: [Benchmark]
 benchmarks = []
@@ -25,11 +25,11 @@ end
 
 ARGV.each do |arg|
   %x( mkdir -p #{File.join('test-suite', *arg.split('.')[0..-2])} )
-  path = File.join('test-suite', *arg.split('.')) + '.hs'
+  path = File.join('test-suite', *arg.split('.')) + 'Spec.hs'
   File.open(path, 'w').write(<<-HASKELL)
 module #{arg}Spec (main, spec) where
 
-import           #{arg}
+import           #{arg} ()
 import           Test.Hspec
 
 main :: IO ()
@@ -44,7 +44,7 @@ end
 
 [
   '.ghci',
-  'haskeleton.cabal',
+  'haskeleton.cabal', # TODO
   File.join('benchmark', 'Bench.hs'),
   File.join('test-suite', 'DocTest.hs')
 ].each do |path|
