@@ -1,5 +1,6 @@
 *.hi
 *.o
+*.sublime-workspace
 .cabal-sandbox/
 .hpc/
 .vagrant/

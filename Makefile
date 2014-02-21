@@ -26,7 +26,7 @@ install:
 	cabal update
 	cabal --numeric-version | grep -F 1.18.0.2 || cabal install cabal-install
 	cabal sandbox init
-	cabal install --enable-benchmarks --enable-tests --flags=documentation --only-dependencies
+	cabal install --enable-benchmarks --enable-tests --flags=documentation --only-dependencies --reorder-goals
 
 repl:
 	cabal configure

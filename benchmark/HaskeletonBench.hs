@@ -1,8 +1,7 @@
 module HaskeletonBench (benchmarks) where
 
-import           Criterion.Main  (bench, nf)
-import           Criterion.Types (Benchmark)
-import           Haskeleton      (haskeleton)
+import           Criterion
+import           Haskeleton
 
 benchmarks :: [Benchmark]
 benchmarks =

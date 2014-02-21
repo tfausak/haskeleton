@@ -1,10 +1,8 @@
 module HaskeletonSpec (main, spec) where
 
-import           Haskeleton            (haskeleton)
-import           Test.Hspec            (Spec, describe, hspec, it, shouldBe)
+import           Haskeleton
+import           Test.Hspec
 import           Test.Hspec.QuickCheck (prop)
-import           Test.HUnit            ()
-import           Test.QuickCheck       ()
 
 main :: IO ()
 main = hspec spec
