@@ -6,8 +6,8 @@ ARGV.each do |arg|
   File.open(path, 'w').write(<<-HASKELL)
 module #{arg}Bench (benchmarks) where
 
-import           Criterion
-import           #{arg} ()
+import Criterion
+import #{arg} ()
 
 benchmarks :: [Benchmark]
 benchmarks = []
@@ -29,8 +29,8 @@ ARGV.each do |arg|
   File.open(path, 'w').write(<<-HASKELL)
 module #{arg}Spec (main, spec) where
 
-import           #{arg} ()
-import           Test.Hspec
+import Test.Hspec
+import #{arg} ()
 
 main :: IO ()
 main = hspec spec
@@ -44,7 +44,7 @@ end
 
 [
   '.ghci',
-  'haskeleton.cabal', # TODO
+  Dir.glob('*.cabal').first,
   File.join('benchmark', 'Bench.hs'),
   File.join('test-suite', 'DocTest.hs')
 ].each do |path|
