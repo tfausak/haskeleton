@@ -1,0 +1,4 @@
+-- | TODO
+module ${moduleName} (module ${moduleName}) where
+
+-- HASKELETON: import qualified New.Module as ${moduleName}

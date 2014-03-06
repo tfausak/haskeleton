@@ -1,10 +1,10 @@
-# [Haskeleton][1]
+# [Haskeleton][]
 
-[![Build Status][2]][3]
+A template for [hi][].
 
-A Haskell project skeleton. This is a complete Cabal package including a
-library, an executable, a test suite, and some benchmarks.
+``` sh
+hi --module-name An.Example --repository git@github.com:tfausak/haskeleton.git
+```
 
-[1]: https://github.com/tfausak/haskeleton
-[2]: https://travis-ci.org/tfausak/haskeleton.png?branch=master
-[3]: https://travis-ci.org/tfausak/haskeleton
+[haskeleton]: https://github.com/tfausak/haskeleton
+[hi]: https://github.com/fujimura/hi
