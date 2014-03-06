@@ -4,10 +4,10 @@ build-type:
     Simple
 cabal-version:
     >= 1.18
---category:
+--category: TODO
 copyright:
     2014 ${author} <${email}>
---description:
+--description: TODO
 extra-source-files:
     CHANGELOG.md
     CONTRIBUTING.md
@@ -20,7 +20,7 @@ maintainer:
     ${email}
 name:
     ${packageName}
---synopsis:
+--synopsis: TODO
 version:
     0.0.0
 
