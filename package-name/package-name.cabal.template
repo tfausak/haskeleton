@@ -1,12 +1,12 @@
 author:
-    $author
+    ${author}
 build-type:
     Simple
 cabal-version:
     >= 1.18
 --category:
 copyright:
-    2014 $author <$email>
+    2014 ${author} <${email}>
 --description:
 extra-source-files:
     CHANGELOG.md
@@ -17,9 +17,9 @@ license-file:
 license:
     MIT
 maintainer:
-    $email
+    ${email}
 name:
-    $packageName
+    ${packageName}
 --synopsis:
 version:
     0.0.0
@@ -34,7 +34,7 @@ library
     default-language:
         Haskell2010
     exposed-modules:
-        $moduleName
+        ${moduleName}
     ghc-prof-options:
         -auto-all
         -prof
@@ -45,10 +45,10 @@ library
         build-depends:
             hscolour == 1.20.*
 
-executable $packageName
+executable ${packageName}
     build-depends:
         base
-      , $packageName
+      , ${packageName}
     default-language:
         Haskell2010
     ghc-prof-options:
@@ -62,7 +62,7 @@ executable $packageName
 test-suite hspec
     build-depends:
         base
-      , $packageName
+      , ${packageName}
       , hspec == 1.8.*
       , HUnit == 1.2.*
       , QuickCheck == 2.6.*
@@ -78,9 +78,9 @@ test-suite hspec
     main-is:
         Spec.hs
     other-modules:
-        $moduleName
+        ${moduleName}
         -- HASKELETON: New.Module
-        $moduleNameSpec
+        ${moduleName}Spec
         -- HASKELETON: New.ModuleSpec
     type:
         exitcode-stdio-1.0
@@ -143,7 +143,7 @@ test-suite hlint
 benchmark benchmarks
     build-depends:
         base
-      , $packageName
+      , ${packageName}
       , criterion == 0.6.*
     default-language:
         Haskell2010

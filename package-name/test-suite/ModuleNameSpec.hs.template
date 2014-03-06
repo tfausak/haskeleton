@@ -1,6 +1,6 @@
-module $moduleNameSpec (spec) where
+module ${moduleName}Spec (spec) where
 
-import           $moduleName ()
+import           ${moduleName} ()
 import           Test.Hspec
 
 spec :: Spec
