@@ -1,9 +1,5 @@
-*.hi
-*.o
-*.sublime-workspace
 .cabal-sandbox/
 .hpc/
-.vagrant/
 cabal.sandbox.config
 dist/
 tmp/
