@@ -1,11 +1,7 @@
 module Main (main) where
 
-import           Test.DocTest (doctest)
-
-arguments :: [String]
-arguments =
-    [ "library/Haskeleton.hs"
-    ]
+import           System.FilePath.Glob (glob)
+import           Test.DocTest         (doctest)
 
 main :: IO ()
-main = doctest arguments
+main = glob "library/**/*.hs" >>= doctest

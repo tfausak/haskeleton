@@ -5,9 +5,7 @@ import           System.Exit            (exitFailure, exitSuccess)
 
 arguments :: [String]
 arguments =
-    [ "--color"
-    , "--hint=HLint.hs"
-    , "benchmark"
+    [ "benchmark"
     , "executable"
     , "library"
     , "test-suite"
