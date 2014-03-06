@@ -1,0 +1,11 @@
+columns: 79
+steps:
+- imports:
+    align: global
+- language_pragmas:
+    remove_redundant: true
+    style: vertical
+- records: {}
+- tabs:
+    spaces: 4
+- trailing_whitespace: {}

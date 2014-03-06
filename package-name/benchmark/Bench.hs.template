@@ -1,0 +1,11 @@
+module Main (main) where
+
+import           Criterion.Main  (bgroup, defaultMain)
+import qualified $moduleName
+-- HASKELETON: import qualified New.Module
+
+main :: IO ()
+main = defaultMain
+    [ bgroup "$moduleName" $moduleNameBench.benchmarks
+    -- HASKELETON: , bgroup "New.Module" New.ModuleBench.benchmarks
+    ]

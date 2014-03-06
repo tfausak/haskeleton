@@ -1,0 +1,7 @@
+module $moduleNameSpec (spec) where
+
+import           $moduleName ()
+import           Test.Hspec
+
+spec :: Spec
+spec = it "is" pending
