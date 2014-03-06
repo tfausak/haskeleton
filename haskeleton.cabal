@@ -49,6 +49,7 @@ library
         Haskell2010
     exposed-modules:
         Haskeleton
+        -- TODO: X.X.X
     ghc-prof-options:
         -auto-all
         -prof
@@ -93,7 +94,9 @@ test-suite hspec
         Spec.hs
     other-modules:
         Haskeleton
+        -- TODO: X.X.X
         HaskeletonSpec
+        -- TODO: X.X.XSpec
     type:
         exitcode-stdio-1.0
 
