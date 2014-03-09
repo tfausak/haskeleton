@@ -2,7 +2,8 @@ install:
 - cabal install hi
 - cd package-name/tmp
 - hi --author 'Travis CI' --email 'travis-ci@example.com'
-  --module-name Travis.CI --repository https://github.com/tfausak/haskeleton
+  --module-name Travis.CI
+  --repository https://github.com/tfausak/haskeleton.git
 - cd travis-ci
 - cabal install --enable-tests --flags=documentation --only-dependencies
 language: haskell
