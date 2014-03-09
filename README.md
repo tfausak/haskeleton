@@ -1,5 +1,7 @@
 # [Haskeleton][]
 
+[![Build Status](http://img.shields.io/travis/tfausak/haskeleton/master.svg)](https://travis-ci.org/tfausak/haskeleton)
+
 A template for [hi][].
 
 ``` sh
