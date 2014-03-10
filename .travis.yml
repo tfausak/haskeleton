@@ -6,11 +6,8 @@ install:
   --repository https://github.com/tfausak/haskeleton.git
 - cd travis-ci
 - cabal install --enable-tests --flags=documentation --only-dependencies
-- pwd
 language: haskell
 script:
-- pwd
-- cd package-name/tmp/travis-ci
 - cabal configure --enable-tests
 - cabal build
 - cabal test
