@@ -12,3 +12,7 @@ script:
 - cabal configure --enable-tests
 - cabal build
 - cabal test
+- runhaskell haskeleton.hs An.Example
+- cabal configure --enable-tests
+- cabal build
+- cabal test
