@@ -62,7 +62,7 @@ updateFile p m = do
     writeFile p (unlines (go =<< lines contents))
   where
     go line = if pragma `isInfixOf` line
-        then [replace line placeholder m, line]
+        then [replace (replace line pragma "") placeholder m, line]
         else [line]
 
 -- Benchmark
@@ -148,7 +148,7 @@ testSuiteTemplate m = unlines
     [ "module " <> m <> "Spec (spec) where"
     , ""
     , "import Test.Hspec"
-    , "import " <> m
+    , "import " <> m <> " ()"
     , ""
     , "spec :: Spec"
     , "spec = it \"is\" pending"
