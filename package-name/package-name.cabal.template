@@ -43,7 +43,7 @@ library
 
     if flag(documentation)
         build-depends:
-            hscolour == 1.20.*
+            hscolour == 1.*
 
 executable ${packageName}
     build-depends:
@@ -63,7 +63,7 @@ test-suite hspec
     build-depends:
         base
       , ${packageName}
-      , hspec == 1.8.*
+      , hspec == 1.*
       , HUnit
       , QuickCheck
     default-language:
@@ -88,8 +88,8 @@ test-suite hspec
 test-suite doctest
     build-depends:
         base
-      , Glob == 0.7.*
-      , doctest == 0.9.*
+      , Glob == 0.*
+      , doctest == 0.*
     default-language:
         Haskell2010
     hs-source-dirs:
@@ -102,8 +102,8 @@ test-suite doctest
 test-suite hpc
     build-depends:
         base
-      , process == 1.1.*
-      , regex-compat == 0.95.*
+      , process == 1.*
+      , regex-compat == 0.*
     default-language:
         Haskell2010
     hs-source-dirs:
@@ -116,8 +116,8 @@ test-suite hpc
 test-suite haddock
     build-depends:
         base
-      , process == 1.1.*
-      , regex-compat == 0.95.*
+      , process == 1.*
+      , regex-compat == 0.*
     default-language:
         Haskell2010
     hs-source-dirs:
@@ -130,7 +130,7 @@ test-suite haddock
 test-suite hlint
     build-depends:
         base
-      , hlint == 1.8.*
+      , hlint == 1.*
     default-language:
         Haskell2010
     hs-source-dirs:
@@ -144,7 +144,7 @@ benchmark benchmarks
     build-depends:
         base
       , ${packageName}
-      , criterion == 0.6.*
+      , criterion == 0.*
     default-language:
         Haskell2010
     hs-source-dirs:
