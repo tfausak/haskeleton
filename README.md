@@ -37,6 +37,6 @@ Creating new project from repository: https://github.com/tfausak/haskeleton.git
 ```
 
 [1]: https://github.com/tfausak/haskeleton
-[2]: http://img.shields.io/travis/tfausak/haskeleton/master.svg
+[2]: https://travis-ci.org/tfausak/haskeleton.svg?branch=master
 [3]: https://travis-ci.org/tfausak/haskeleton
 [4]: https://github.com/fujimura/hi
