@@ -16,9 +16,13 @@ Vagrant.configure('2') do |config|
     config.vm.provision :shell, inline: <<-'SH', privileged: false
         set -e -x
         echo 'PATH="$HOME/.cabal/bin:$PATH"' > .bash_profile
+        source .bash_profile
         cabal update
-        cabal install cabal-install
-        cabal install hi hlint pointful scan stylish-haskell
-        cabal install pointfree
+        if test $(cabal --numeric-version) != '1.18.0.3'; then
+            cabal install cabal-install-1.18.0.3
+        fi
+        for package in hi hlint pointfree pointful scan stylish-haskell; do
+            which $package || cabal install $package
+        done
     SH
 end
