@@ -82,7 +82,7 @@ benchmarkTemplate m = unlines
     [ "module " <> m <> "Bench (benchmarks) where"
     , ""
     , "import Criterion"
-    , "import " <> m
+    , "import " <> m <> " ()"
     , ""
     , "benchmarks :: [Benchmark]"
     , "benchmarks = []"
@@ -124,11 +124,7 @@ libraryPath = path libraryDirectory librarySuffix
 libraryTemplate :: String -> String
 libraryTemplate m = unlines
     [ "-- | TODO"
-    , "module " <> m <> " where"
-    , ""
-    , "-- | TODO: Delete this function."
-    , "unit :: ()"
-    , "unit = ()"
+    , "module " <> m <> " () where"
     ]
 
 librarySuffix :: String
@@ -156,7 +152,7 @@ testSuiteTemplate m = unlines
     [ "module " <> m <> "Spec (spec) where"
     , ""
     , "import Test.Hspec"
-    , "import " <> m
+    , "import " <> m <> " ()"
     , ""
     , "spec :: Spec"
     , "spec = it \"is\" pending"

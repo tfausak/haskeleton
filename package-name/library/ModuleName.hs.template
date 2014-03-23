@@ -1,8 +1,6 @@
+{-# OPTIONS_GHC -fno-warn-dodgy-exports -fno-warn-unused-imports #-}
+
 -- | TODO
-module ${moduleName} where
+module ${moduleName} (module ${moduleName}) where
 
--- HASKELETON: import qualified New.Module as ${moduleName}
-
--- | TODO: Delete this function.
-unit :: ()
-unit = ()
+-- HASKELETON: import New.Module as ${moduleName}
