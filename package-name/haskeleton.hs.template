@@ -124,7 +124,7 @@ libraryPath = path libraryDirectory librarySuffix
 libraryTemplate :: String -> String
 libraryTemplate m = unlines
     [ "-- | TODO"
-    , "module " <> m <> " () where"
+    , "module " <> m <> " where"
     , ""
     , "-- | TODO: Delete this function."
     , "unit :: ()"
