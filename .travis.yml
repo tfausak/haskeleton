@@ -7,5 +7,12 @@ install:
   --repository "file://$(dirname $(dirname $(pwd)))"
 - cd travis-ci
 - cabal install --enable-tests --flags=documentation --only-dependencies
-- runhaskell haskeleton.hs An.Example
 language: haskell
+script:
+- cabal configure --enable-tests
+- cabal build
+- cabal test
+- runhaskell haskeleton.hs An.Example
+- cabal configure --enable-tests
+- cabal build
+- cabal test
