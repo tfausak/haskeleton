@@ -25,6 +25,7 @@ main = do
     updateFiles m = do
         updateCabal m
         updateCriterion m
+        updateLibrary m
 
 --
 
@@ -128,6 +129,9 @@ libraryTemplate m = unlines
 
 librarySuffix :: String
 librarySuffix = ""
+
+updateLibrary :: String -> IO ()
+updateLibrary = updateFile (libraryPath "${moduleName}")
 
 writeLibraryFile :: String -> IO ()
 writeLibraryFile m = writeFile (libraryPath m) (libraryTemplate m)
