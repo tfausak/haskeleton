@@ -1,8 +1,8 @@
 module Main (main) where
 
 import           Criterion.Main (bgroup, defaultMain)
-import qualified ${moduleName}
--- HASKELETON: import qualified New.Module
+import qualified ${moduleName}Bench
+-- HASKELETON: import qualified New.ModuleBench
 
 main :: IO ()
 main = defaultMain

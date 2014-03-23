@@ -1,4 +1,4 @@
-module ${moduleName} (benchmarks) where
+module ${moduleName}Bench (benchmarks) where
 
 import           Criterion
 import           ${moduleName} ()
