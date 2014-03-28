@@ -2,17 +2,25 @@ install:
 - git fetch --unshallow
 - cabal install hi
 - cd package-name/tmp
-- hi --author 'Travis CI' --email 'travis-ci@example.com'
+- hi
+  --author 'Travis CI'
+  --email 'travis-ci@example.com'
   --module-name Travis.CI
   --repository "file://$(dirname $(dirname $(pwd)))"
 - cd travis-ci
-- cabal install --enable-tests --flags=documentation --only-dependencies
+- cabal install
+  --enable-benchmarks
+  --enable-tests
+  --flags=documentation
+  --only-dependencies
 language: haskell
 script:
 - cabal configure --enable-tests
 - cabal build
 - cabal test
+- cabal bench
 - runhaskell haskeleton.hs An.Example
 - cabal configure --enable-tests
 - cabal build
 - cabal test
+- cabal bench
