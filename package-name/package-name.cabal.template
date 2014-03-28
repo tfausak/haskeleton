@@ -21,6 +21,8 @@ maintainer:
 name:
     ${packageName}
 --synopsis: TODO
+tested-with:
+    GHC == 7.6.3
 version:
     0.0.0
 
