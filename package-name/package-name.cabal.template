@@ -37,6 +37,7 @@ library
         Haskell2010
     exposed-modules:
         ${moduleName}
+        -- HASKELETON: New.Module
     ghc-prof-options:
         -auto-all
         -prof
