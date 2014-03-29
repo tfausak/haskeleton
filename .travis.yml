@@ -13,6 +13,7 @@ install:
   --enable-tests
   --flags=documentation
   --only-dependencies
+  --reorder-goals
 language: haskell
 script:
 - cabal configure --enable-tests
