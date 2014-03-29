@@ -8,20 +8,9 @@ install:
   --module-name Travis.CI
   --repository "file://$(dirname $(dirname $(pwd)))"
 - cd travis-ci
-- cabal install
-  --enable-benchmarks
-  --enable-tests
-  --flags=documentation
-  --only-dependencies
-  --reorder-goals
+- make install
 language: haskell
 script:
-- cabal configure --enable-tests
-- cabal build
-- cabal test
-- cabal bench
+- make configure build test bench
 - runhaskell haskeleton.hs An.Example
-- cabal configure --enable-tests
-- cabal build
-- cabal test
-- cabal bench
+- make configure build test bench
