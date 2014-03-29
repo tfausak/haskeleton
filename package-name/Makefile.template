@@ -17,10 +17,6 @@ clean:
 configure:
 	cabal configure --enable-benchmarks --enable-tests
 
-format:
-	git ls-files '*.hs' | xargs -n 1 scan --inplace-modify
-	git ls-files '*.hs' | xargs stylish-haskell --inplace
-
 haddock:
 	cabal haddock --hyperlink-source
 	# dist/doc/html/${packageName}/index.html
