@@ -6,8 +6,10 @@ A Haskell project skeleton. Implemented as a template for [hi][4].
 
 ``` sh
 $ hi \
-    --module-name Example.Module \
-    --repository https://github.com/tfausak/haskeleton.git
+    --module-name 'Example.Module' \
+    --repository 'https://github.com/tfausak/haskeleton.git' \
+    --author 'Jane Doe'
+    --email 'jane.doe@example.com'
 Creating new project from repository: https://github.com/tfausak/haskeleton.git
     ...
     create  example-module/.ghci
