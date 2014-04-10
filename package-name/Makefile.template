@@ -27,7 +27,7 @@ hpc:
 
 install:
 	cabal sandbox init
-	cabal install --enable-benchmarks --enable-tests --flags=documentation --only-dependencies --reorder-goals
+	cabal install --enable-benchmarks --enable-tests --flags=documentation --only-dependencies
 
 repl:
 	cabal repl lib:${packageName}
