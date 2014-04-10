@@ -8,7 +8,7 @@ A Haskell project skeleton. Implemented as a template for [hi][4].
 $ hi \
     --module-name 'Example.Module' \
     --repository 'https://github.com/tfausak/haskeleton.git' \
-    --author 'Jane Doe'
+    --author 'Jane Doe' \
     --email 'jane.doe@example.com'
 Creating new project from repository: https://github.com/tfausak/haskeleton.git
     ...
