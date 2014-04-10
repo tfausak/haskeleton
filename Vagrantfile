@@ -1,4 +1,4 @@
-# Vagrant 1.5.1 <http://www.vagrantup.com/downloads.html>
+# Vagrant 1.5.2 <http://www.vagrantup.com/downloads.html>
 # VirtualBox 4.3.8 <https://www.virtualbox.org/wiki/Downloads>
 
 Vagrant.require_version '~> 1.5'
