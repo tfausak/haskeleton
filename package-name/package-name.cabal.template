@@ -63,7 +63,7 @@ executable ${packageName}
     main-is:
         Main.hs
 
-test-suite hspec
+test-suite tests
     build-depends:
         base
       , ${packageName}
@@ -89,7 +89,7 @@ test-suite hspec
     type:
         exitcode-stdio-1.0
 
-test-suite doctest
+test-suite examples
     build-depends:
         base
       , Glob == 0.*
@@ -103,7 +103,7 @@ test-suite doctest
     type:
         exitcode-stdio-1.0
 
-test-suite hpc
+test-suite coverage
     build-depends:
         base
       , process == 1.*
@@ -117,7 +117,7 @@ test-suite hpc
     type:
         exitcode-stdio-1.0
 
-test-suite haddock
+test-suite documentation
     build-depends:
         base
       , process == 1.*
@@ -131,7 +131,7 @@ test-suite haddock
     type:
         exitcode-stdio-1.0
 
-test-suite hlint
+test-suite style
     build-depends:
         base
       , hlint == 1.*
