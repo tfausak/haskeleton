@@ -3,10 +3,10 @@ install:
 - cabal install hi
 - cd package-name/tmp
 - hi
-  --author 'Travis CI'
-  --email 'travis-ci@example.com'
-  --module-name Travis.CI
-  --repository "file://$(dirname $(dirname $(pwd)))"
+    --author 'Travis CI'
+    --email 'travis-ci@example.com'
+    --module-name Travis.CI
+    --repository "file://$(dirname $(dirname $(pwd)))"
 - cd travis-ci
 - make install
 language: haskell
