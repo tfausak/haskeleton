@@ -5,31 +5,28 @@
 cabal update
 cabal install cabal-install
 
-# Initialize a sandbox.
-cabal sandbox init
-
-# Install the package's dependencies.
-cabal install --enable-benchmarks --enable-tests --flags=documentation --only-dependencies --reorder-goals
+# Initialize a sandbox and install the package's dependencies.
+make install
 
 # Configure & build the package.
-cabal configure --enable-benchmarks --enable-tests
-cabal build
+make configure
+make build
 
 # Test package.
-cabal test
+make test
 
 # Benchmark package.
-cabal bench
+make bench
 
 # Run executable.
-cabal run ${packageName}
+make run
 
 # Start REPL.
-cabal repl lib:${packageName}
+make repl
 
 # Generate documentation.
-cabal haddock --hyperlink-source
+make haddock
 
 # Analyze coverage.
-hpc markup --destdir=tmp dist/hpc/tix/hspec/hspec.tix
+make hpc
 ```
