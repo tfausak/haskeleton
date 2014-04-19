@@ -27,10 +27,6 @@ tested-with:
 version:
     0.0.0
 
-flag documentation
-    default:
-        False
-
 library
     build-depends:
         base
@@ -44,10 +40,6 @@ library
         -prof
     hs-source-dirs:
         library
-
-    if flag(documentation)
-        build-depends:
-            hscolour == 1.*
 
 executable ${packageName}
     build-depends:
