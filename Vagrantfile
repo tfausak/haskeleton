@@ -38,11 +38,11 @@ Vagrant.configure('2') do |config|
         # Install Cabal.
         if ! which cabal
         then
-            test -e cabal-install-v1.18.0.3.tar.gz ||
-                wget https://github.com/haskell/cabal/archive/cabal-install-v1.18.0.3.tar.gz
-            test -e cabal-cabal-install-v1.18.0.3 ||
-                tar --extract --file cabal-install-v1.18.0.3.tar.gz
-            cd cabal-cabal-install-v1.18.0.3/cabal-install
+            test -f cabal-install-v1.20.0.0.tar.gz ||
+                wget https://github.com/haskell/cabal/archive/cabal-install-v1.20.0.0.tar.gz
+            test -d cabal-cabal-install-v1.20.0.0 ||
+                tar --extract --file cabal-install-v1.20.0.0.tar.gz
+            cd cabal-cabal-install-v1.20.0.0/cabal-install
             ./bootstrap.sh
             cd ../..
         fi
