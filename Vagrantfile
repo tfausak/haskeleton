@@ -17,11 +17,11 @@ Vagrant.configure('2') do |config|
         # Install GHC.
         if ! which ghc
         then
-            test -e ghc-7.8.1-x86_64-unknown-linux-deb7.tar.xz ||
-                wget http://www.haskell.org/ghc/dist/7.8.1/ghc-7.8.1-x86_64-unknown-linux-deb7.tar.xz
-            test -e ghc-7.8.1 ||
-                tar --extract --file ghc-7.8.1-x86_64-unknown-linux-deb7.tar.xz
-            cd ghc-7.8.1
+            test -f ghc-7.8.2-x86_64-unknown-linux-deb7.tar.xz ||
+                wget https://www.haskell.org/ghc/dist/7.8.2/ghc-7.8.2-x86_64-unknown-linux-deb7.tar.xz
+            test -d ghc-7.8.2 ||
+                tar --extract --file ghc-7.8.2-x86_64-unknown-linux-deb7.tar.xz
+            cd ghc-7.8.2
             ./configure
             make install
             cd ..
