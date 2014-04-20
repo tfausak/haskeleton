@@ -1,4 +1,4 @@
-# Vagrant 1.5.2 <http://www.vagrantup.com/downloads.html>
+# Vagrant 1.5.3 <http://www.vagrantup.com/downloads.html>
 # VirtualBox 4.3.10 <https://www.virtualbox.org/wiki/Downloads>
 
 Vagrant.require_version '~> 1.5'
@@ -11,8 +11,8 @@ Vagrant.configure('2') do |config|
         set -e -x
 
         # Install dependencies.
-        sudo apt-get update
-        sudo apt-get install --assume-yes git libgmp-dev
+        apt-get update
+        apt-get install --assume-yes git libgmp-dev
 
         # Install GHC.
         if ! which ghc
@@ -32,7 +32,7 @@ Vagrant.configure('2') do |config|
         set -e -x
 
         # Add Cabal to the path.
-        echo 'PATH="$HOME/.cabal/bin:$PATH"' > .bash_profile
+        echo 'PATH=".cabal-sandbox/bin:$HOME/.cabal/bin:$PATH"' > .bash_profile
         source .bash_profile
 
         # Install Cabal.
