@@ -1,5 +1,5 @@
--- Usage: runhaskell haskeleton.hs New.Module
-module Main (main) where
+-- Usage: runhaskell Haskeleton.hs New.Module
+module Haskeleton (main) where
 
 import           Data.List          (groupBy, isInfixOf)
 import           Data.Monoid        ((<>))

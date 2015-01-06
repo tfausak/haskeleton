@@ -15,5 +15,5 @@ install:
 language: haskell
 script:
 - make configure build test bench
-- runhaskell haskeleton.hs An.Example
+- runhaskell Haskeleton.hs An.Example
 - make configure build test bench
