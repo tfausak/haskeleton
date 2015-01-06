@@ -1,11 +1,11 @@
 -- Usage: runhaskell Haskeleton.hs New.Module
 module Haskeleton (main) where
 
-import           Data.List          (groupBy, isInfixOf)
-import           Data.Monoid        ((<>))
-import           System.Directory   (createDirectoryIfMissing)
-import           System.Environment (getArgs)
-import           System.FilePath    (joinPath, takeDirectory, (<.>))
+import Data.List (groupBy, isInfixOf)
+import Data.Monoid ((<>))
+import System.Directory (createDirectoryIfMissing)
+import System.Environment (getArgs)
+import System.FilePath (joinPath, takeDirectory, (<.>))
 
 main :: IO ()
 main = do

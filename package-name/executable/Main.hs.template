@@ -1,6 +1,6 @@
 module Main (main) where
 
-import           ${moduleName} ()
+import ${moduleName} ()
 
 main :: IO ()
 main = return ()
