@@ -4,4 +4,4 @@
 
 ## v0.0.0
 
--   Initial release.
+- Initially created.
