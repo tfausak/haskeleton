@@ -36,3 +36,4 @@ run:
 
 test:
 	cabal test
+	cabal check
