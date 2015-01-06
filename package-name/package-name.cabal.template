@@ -35,6 +35,8 @@ library
     exposed-modules:
         ${moduleName}
         -- HASKELETON: New.Module
+    ghc-options:
+        -Wall
     ghc-prof-options:
         -auto-all
         -prof
