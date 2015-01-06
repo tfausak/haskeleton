@@ -6,7 +6,7 @@ cabal-version:
     >= 1.10
 --category: TODO
 copyright:
-    2014 ${author} <${email}>
+    2015 ${author} <${email}>
 --description: TODO
 extra-source-files:
     CHANGELOG.md
