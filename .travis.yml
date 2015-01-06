@@ -1,6 +1,6 @@
 install:
 - git fetch --unshallow
-- cabal install hi
+- cabal install 'hi ==0.0.8.*'
 - cd package-name/tmp
 - hi
     --author 'Travis CI'
