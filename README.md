@@ -5,8 +5,7 @@
 A Haskell project skeleton. Implemented as a template for [hi][4].
 
 ``` sh
-$ hi \
-    --moduleName 'Example.Module' \
+$ hi example-module \
     --repository 'https://github.com/tfausak/haskeleton.git' \
     --author 'Jane Doe' \
     --email 'jane.doe@example.com'
