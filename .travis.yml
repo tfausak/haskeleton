@@ -3,7 +3,7 @@ ghc:
 - 7.6
 install:
 - git fetch --unshallow
-- cabal install 'hi ==0.0.8.*'
+- cabal install happy 'hi ==0.0.8.*'
 - cd package-name/tmp
 - hi
     --author 'Travis CI'
