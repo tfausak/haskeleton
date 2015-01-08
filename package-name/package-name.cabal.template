@@ -65,7 +65,7 @@ test-suite tests
     build-depends:
         base
       , ${packageName}
-      , hspec == 1.*
+      , hspec ==2.*
         , HUnit
         , QuickCheck
     default-language:
@@ -90,8 +90,8 @@ test-suite tests
 test-suite examples
     build-depends:
         base
-      , Glob == 0.*
-      , doctest == 0.*
+      , Glob ==0.7.*
+      , doctest ==0.9.*
     default-language:
         Haskell2010
     hs-source-dirs:
@@ -104,8 +104,8 @@ test-suite examples
 test-suite coverage
     build-depends:
         base
-      , process == 1.*
-      , regex-compat == 0.*
+      , process ==1.*
+      , regex-compat ==0.95.*
     default-language:
         Haskell2010
     hs-source-dirs:
@@ -118,8 +118,8 @@ test-suite coverage
 test-suite documentation
     build-depends:
         base
-      , process == 1.*
-      , regex-compat == 0.*
+      , process
+      , regex-compat
     default-language:
         Haskell2010
     hs-source-dirs:
@@ -132,7 +132,7 @@ test-suite documentation
 test-suite style
     build-depends:
         base
-      , hlint == 1.*
+      , hlint ==1.*
     default-language:
         Haskell2010
     hs-source-dirs:
@@ -146,9 +146,7 @@ benchmark benchmarks
     build-depends:
         base
       , ${packageName}
-      , criterion == 0.6.*
-        , hastache < 0.6
-        , statistics < 0.11
+      , criterion == 1.*
     default-language:
         Haskell2010
     hs-source-dirs:
