@@ -1,8 +1,9 @@
 # Changelog
 
-## [Master][]
+## 0.1.0 "Clavicle" (2014-02-15)
 
-## [0.1.0][] "Clavicle" (2014-02-15)
+- Initially released.
 
-[master]: https://github.com/tfausak/haskeleton/compare/v0.1.0...master
-[0.1.0]: https://github.com/tfausak/haskeleton/compare/dd853da...v0.1.0
+## 0.0.0 "Stapes" (2014-02-05)
+
+- Initially created.
