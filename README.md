@@ -5,36 +5,34 @@
 A Haskell project skeleton. Implemented as a template for [hi][4].
 
 ``` sh
-$ hi example-module \
-    --repository 'https://github.com/tfausak/haskeleton.git' \
-    --author 'Jane Doe' \
-    --email 'jane.doe@example.com'
-Creating new project from repository: https://github.com/tfausak/haskeleton.git
-    ...
-    create  example-module/.ghci
-    create  example-module/.gitattributes
-    create  example-module/.gitignore
-    create  example-module/.stylish-haskell.yaml
-    create  example-module/.travis.yml
-    create  example-module/CHANGELOG.md
-    create  example-module/CONTRIBUTING.md
-    create  example-module/HLint.hs
-    create  example-module/LICENSE.txt
-    create  example-module/README.md
-    create  example-module/benchmark/Bench.hs
-    create  example-module/benchmark/Example/ModuleBench.hs
-    create  example-module/cabal.config
-    create  example-module/executable/Main.hs
-    create  example-module/haskeleton.hs
-    create  example-module/library/Example/Module.hs
-    create  example-module/example-module.cabal
-    create  example-module/test-suite/DocTest.hs
-    create  example-module/test-suite/HLint.hs
-    create  example-module/test-suite/HPC.hs
-    create  example-module/test-suite/Haddock.hs
-    create  example-module/test-suite/Example/ModuleSpec.hs
-    create  example-module/test-suite/Spec.hs
-    create  example-module/tmp/.gitignore
+$ hi example \
+    --repository git://github.com/tfausak/haskeleton.git
+Creating new project with git repository:git://github.com/tfausak/haskeleton.git
+    create  example/.gitattributes
+    create  example/.gitignore
+    create  example/.stylish-haskell.yaml
+    create  example/.travis.yml
+    create  example/CHANGELOG.md
+    create  example/CONTRIBUTING.md
+    create  example/HLint.hs
+    create  example/Haskeleton.hs
+    create  example/LICENSE.md
+    create  example/Makefile
+    create  example/README.md
+    create  example/Setup.hs
+    create  example/benchmark/Bench.hs
+    create  example/benchmark/ExampleBench.hs
+    create  example/executable/Main.hs
+    create  example/library/Example.hs
+    create  example/example.cabal
+    create  example/test-suite/DocTest.hs
+    create  example/test-suite/HLint.hs
+    create  example/test-suite/HPC.hs
+    create  example/test-suite/Haddock.hs
+    create  example/test-suite/ExampleSpec.hs
+    create  example/test-suite/Spec.hs
+    create  example/tmp/.gitignore
+
 ```
 
 [1]: https://github.com/tfausak/haskeleton
