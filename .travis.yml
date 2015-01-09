@@ -13,6 +13,6 @@ install:
 - make install
 language: haskell
 script:
-- make configure build test bench
+- make configure build test bench haddock hpc
 - runhaskell Haskeleton.hs An.Example
-- make configure build test bench
+- make configure build test bench haddock hpc
