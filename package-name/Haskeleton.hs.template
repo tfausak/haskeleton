@@ -81,8 +81,9 @@ benchmarkTemplate :: String -> String
 benchmarkTemplate m = unlines
     [ "module " <> m <> "Bench (benchmarks) where"
     , ""
-    , "import Criterion"
     , "import " <> m <> " ()"
+    , ""
+    , "import Criterion"
     , ""
     , "benchmarks :: [Benchmark]"
     , "benchmarks = []"
@@ -151,8 +152,9 @@ testSuiteTemplate :: String -> String
 testSuiteTemplate m = unlines
     [ "module " <> m <> "Spec (spec) where"
     , ""
-    , "import Test.Hspec"
     , "import " <> m <> " ()"
+    , ""
+    , "import Test.Hspec"
     , ""
     , "spec :: Spec"
     , "spec = it \"is\" pending"

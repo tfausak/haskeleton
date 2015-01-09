@@ -1,7 +1,8 @@
 module ${moduleName}Spec (spec) where
 
-import Test.Hspec
 import ${moduleName} ()
+
+import Test.Hspec
 
 spec :: Spec
 spec = it "is" pending

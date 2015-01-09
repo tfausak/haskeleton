@@ -1,7 +1,8 @@
 module ${moduleName}Bench (benchmarks) where
 
-import Criterion
 import ${moduleName} ()
+
+import Criterion
 
 benchmarks :: [Benchmark]
 benchmarks = []
