@@ -1,5 +1,5 @@
 -- | TODO
-module ${moduleName} where
+module ${moduleName} (module ${moduleName}) where
 
 -- HASKELETON: import New.Module as ${moduleName}
 
