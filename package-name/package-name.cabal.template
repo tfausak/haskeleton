@@ -65,7 +65,7 @@ test-suite tests
     build-depends:
         base
       , ${packageName}
-      , hspec == 1.*
+      , hspec ==2.*
         , HUnit
         , QuickCheck
     default-language:
