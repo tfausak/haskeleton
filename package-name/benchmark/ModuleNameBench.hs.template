@@ -1,8 +1,10 @@
 module ${moduleName}Bench (benchmarks) where
 
-import ${moduleName} ()
+import ${moduleName}
 
 import Criterion
 
 benchmarks :: [Benchmark]
-benchmarks = []
+benchmarks =
+    [ bench "main" (nfIO main)
+    ]

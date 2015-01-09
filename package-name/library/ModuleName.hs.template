@@ -1,6 +1,7 @@
-{-# OPTIONS_GHC -fno-warn-dodgy-exports -fno-warn-unused-imports #-}
-
 -- | TODO
 module ${moduleName} where
 
 -- HASKELETON: import New.Module as ${moduleName}
+
+main :: IO ()
+main = return ()

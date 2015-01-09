@@ -1,8 +1,11 @@
 module ${moduleName}Spec (spec) where
 
-import ${moduleName} ()
+import ${moduleName}
 
 import Test.Hspec
 
 spec :: Spec
-spec = it "is" pending
+spec =
+    describe "main" $ do
+        it "returns the unit" $
+            main `shouldReturn` ()
