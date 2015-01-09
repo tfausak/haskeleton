@@ -90,7 +90,7 @@ test-suite tests
 test-suite examples
     build-depends:
         base
-      , Glob == 0.*
+      , Glob ==0.7.*
       , doctest == 0.*
     default-language:
         Haskell2010
