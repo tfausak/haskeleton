@@ -3,7 +3,7 @@ ghc:
 - 7.6
 install:
 - git fetch --unshallow
-- cabal install happy hi 'process >=1.2'
+- cabal install happy hi
 - cd package-name/tmp
 - hi travis-ci
     --author 'Travis CI'
