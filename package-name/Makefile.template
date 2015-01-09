@@ -3,10 +3,10 @@
 all: install configure build haddock test hpc bench
 
 bench:
-	cabal bench
+	cabal bench --jobs
 
 build:
-	cabal build
+	cabal build --jobs
 
 clean:
 	cabal clean
@@ -26,14 +26,14 @@ hpc:
 
 install:
 	cabal sandbox init
-	cabal install --enable-benchmarks --enable-tests --force-reinstalls --only-dependencies
+	cabal install --enable-benchmarks --enable-tests --force-reinstalls --jobs --only-dependencies
 
 repl:
 	cabal repl lib:${packageName}
 
 run:
-	cabal run ${packageName}
+	cabal run --jobs ${packageName}
 
 test:
-	cabal test
+	cabal test --jobs
 	cabal check
