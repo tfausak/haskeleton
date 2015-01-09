@@ -3,12 +3,11 @@ ghc:
 - 7.6
 install:
 - git fetch --unshallow
-- cabal install happy 'hi ==0.0.8.*'
+- cabal install happy hi
 - cd package-name/tmp
-- hi
+- hi travis-ci
     --author 'Travis CI'
     --email 'travis-ci@example.com'
-    --module-name Travis.CI
     --repository "file://$(dirname $(dirname $(pwd)))"
 - cd travis-ci
 - make install
