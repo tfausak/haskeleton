@@ -3,5 +3,6 @@ module ${moduleName} where
 
 -- HASKELETON: import New.Module as ${moduleName}
 
+-- | TODO
 main :: IO ()
 main = return ()
