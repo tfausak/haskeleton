@@ -9,7 +9,7 @@ import Text.Regex (matchRegex, mkRegex)
 arguments :: [String]
 arguments =
     [ "report"
-    , "dist/hpc/tix/tests/tests.tix"
+    , "tests.tix"
     ]
 
 average :: (Fractional a, Real b) => [b] -> a
