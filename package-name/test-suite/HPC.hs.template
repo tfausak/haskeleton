@@ -2,15 +2,10 @@ module Main (main) where
 
 import Data.List (genericLength)
 import Data.Maybe (catMaybes)
+import System.Directory (doesFileExist)
 import System.Exit (exitFailure, exitSuccess)
 import System.Process (readProcess)
 import Text.Regex (matchRegex, mkRegex)
-
-arguments :: [String]
-arguments =
-    [ "report"
-    , "tests.tix"
-    ]
 
 average :: (Fractional a, Real b) => [b] -> a
 average xs = realToFrac (sum xs) / genericLength xs
@@ -20,6 +15,13 @@ expected = 90
 
 main :: IO ()
 main = do
+    -- The location of the TIX file changed between versions of cabal-install.
+    -- See <https://github.com/tfausak/haskeleton/issues/31> for details.
+    let newFile = "tests.tix"
+        oldFile = "dist/hpc/tix/tests/tests.tix"
+    newFileExists <- doesFileExist newFile
+    let arguments = "report" : if newFileExists then [newFile] else [oldFile]
+
     output <- readProcess "hpc" arguments ""
     if average (match output) >= expected
         then exitSuccess
