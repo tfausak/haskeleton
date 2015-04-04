@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.0 "Humerus" (2015-04-04)
+
+- Fixed a bug that used the wrong TIX file.
+
 ## 0.2.0 "Scapula" (2014-01-09)
 
 - Added support for version 1 of `hi`.
