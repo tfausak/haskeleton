@@ -35,6 +35,5 @@ tix = do
     let newFile = "tests.tix"
         oldFile = "dist/hpc/tix/tests/tests.tix"
     newFileExists <- doesFileExist newFile
-    if newFileExists
-        then newFile
-        else oldFile
+    let file = if newFileExists then newFile else oldFile
+    return file
