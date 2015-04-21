@@ -58,8 +58,8 @@ Haskeleton works with `hi` version 1.x. The packages it creates
 work with GHC 7.8 and 7.6, along with the latest version of the
 Haskell platform (2014.2.0.0).
 
-[1]: https://github.com/tfausak/haskeleton
-[2]: https://travis-ci.org/tfausak/haskeleton.svg?branch=master
+[1]: http://taylor.fausak.me/haskeleton/
+[2]: https://img.shields.io/travis/tfausak/haskeleton/master.svg?label=build&style=flat-square
 [3]: https://travis-ci.org/tfausak/haskeleton
 [4]: https://www.haskell.org/cabal/users-guide/developing-packages.html#using-cabal-init
 [5]: http://taylor.fausak.me/2014/03/04/haskeleton-a-haskell-project-skeleton/
