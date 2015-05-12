@@ -2,3 +2,4 @@
 /.hpc/
 /cabal.sandbox.config
 /dist/
+/tmp/
