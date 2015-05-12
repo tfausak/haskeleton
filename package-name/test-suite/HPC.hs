@@ -19,7 +19,7 @@ main = do
     let arguments = ["report", file]
 
     output <- readProcess "hpc" arguments ""
-    if average (match output) >= expected
+    if average (match output) >= (expected :: Float)
         then exitSuccess
         else putStr output >> exitFailure
 

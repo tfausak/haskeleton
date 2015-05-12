@@ -20,7 +20,7 @@ expected = 90
 main :: IO ()
 main = do
     output <- readProcess "cabal" arguments ""
-    if average (match output) >= expected
+    if average (match output) >= (expected :: Float)
         then exitSuccess
         else putStr output >> exitFailure
 
