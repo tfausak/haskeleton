@@ -1,4 +1,6 @@
--- Usage: runhaskell Haskeleton.hs New.Module
+#!/usr/bin/env runhaskell
+
+-- Usage: ./Haskeleton.hs New.Module
 module Haskeleton (main) where
 
 import Data.List (groupBy, isInfixOf)
