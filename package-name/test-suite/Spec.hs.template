@@ -1,0 +1,14 @@
+module Main (main) where
+
+import Test.Hspec (Spec, hspec)
+
+import qualified ${moduleName}Spec
+-- HASKELETON: import qualified New.ModuleSpec
+
+main :: IO ()
+main = hspec spec
+
+spec :: Spec
+spec = do
+    describe "${moduleName}" ${moduleName}Spec.spec
+    -- HASKELETON: describe "New.Module" New.ModuleSpec.spec
