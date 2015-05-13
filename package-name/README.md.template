@@ -1,9 +1,14 @@
 # ${packageName}
 
+This is a new package created by [Haskeleton][]. To finish setting it up, look
+for "TODO"s in the Cabal file and in the library itself. To quickly get up and
+running, simply run `make`. See below for more detailed instructions.
+
+[haskeleton]: http://taylor.fausak.me/haskeleton/
+
 ``` sh
-# Update to latest version of Cabal.
+# Update Cabal's list of packages.
 cabal update
-cabal install cabal-install
 
 # Initialize a sandbox and install the package's dependencies.
 make install
