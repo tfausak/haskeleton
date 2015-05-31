@@ -1,12 +1,13 @@
 module Main (main) where
 
-import Test.Hspec (Spec, describe, hspec)
+import Test.Tasty (defaultMain)
+import Test.Tasty.Hspec
 
 import qualified ${moduleName}Spec
 -- HASKELETON: import qualified New.ModuleSpec
 
 main :: IO ()
-main = hspec spec
+main = testSpec "Spec" spec >>= defaultMain
 
 spec :: Spec
 spec = do
