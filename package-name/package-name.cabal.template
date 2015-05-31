@@ -38,6 +38,10 @@ executable ${packageName}
     ghc-options: -Wall
 
 test-suite tests
+
+    if impl(ghc <=7.8)
+        build-depends:
+            mtl ==2.1.*
     type: exitcode-stdio-1.0
     main-is: Spec.hs
     build-depends:
