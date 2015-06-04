@@ -51,6 +51,7 @@ test-suite tests
         hspec ==2.*,
         HUnit -any,
         QuickCheck -any,
+        tagged ==0.8.*,
         tasty ==0.10.*,
         tasty-hspec ==1.*
     default-language: Haskell2010
