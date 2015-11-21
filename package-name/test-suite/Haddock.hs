@@ -25,6 +25,6 @@ main = do
         else putStr output >> exitFailure
 
 match :: String -> [Int]
-match = fmap read . concat . catMaybes . fmap (matchRegex pattern) . lines
+match = fmap read . concat . catMaybes . fmap (matchRegex regex) . lines
   where
-    pattern = mkRegex "^ *([0-9]*)% "
+    regex = mkRegex "^ *([0-9]*)% "
