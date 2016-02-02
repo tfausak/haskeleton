@@ -1,3 +1,11 @@
+**This project is unmaintained!**
+Haskeleton is now available as a [Stack](haskellstack.org) template.
+Getting started with the new version is easy:
+
+``` sh
+> stack new your-project haskeleton -p github-username=your-username -p 'author-name=Your Name'
+```
+
 # [Haskeleton][1]
 
 [![Build Status][2]][3]
