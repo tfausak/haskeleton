@@ -1,5 +1,5 @@
 **This project is unmaintained!**
-Haskeleton is now available as a [Stack](haskellstack.org) template.
+Haskeleton is now available as a [Stack](http://haskellstack.org) template.
 Getting started with the new version is easy:
 
 ``` sh
